@@ -1,0 +1,105 @@
+.profil {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  &__wrap {
+    max-width: 1024px;
+    color: $AntiqueWhite;
+    background-color: $LightBlue;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+    padding: 36px 26px;
+  }
+  &__img {
+    width: 350px;
+  }
+  &__info {
+    h1 {
+      font-size: clamp(4rem, 5.5vw, 3rem);
+    }
+    &--height {
+      font-size: 1.3rem;
+      p {
+        color: aliceblue;
+        font-size: 1.3rem;
+      }
+    }
+    &--width {
+      padding: 0 2px;
+      font-size: 1.3rem;
+      p {
+        color: aliceblue;
+        font-size: 1rem;
+      }
+    }
+    &--types {
+      font-size: 1.3rem;
+      p {
+        color: aliceblue;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+.progress {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+
+  h3 {
+    color: $AntiqueWhite;
+    padding: 10px 0;
+  }
+  span {
+    color: $AntiqueWhite;
+    position: absolute;
+    font-size: 15px;
+    padding: 2px 10px;
+  }
+}
+
+progress::-webkit-progress-bar {
+  background-color: $AntiqueWhite;
+
+  border-radius: 16px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #0058cc;
+  border-radius: 16px;
+}
+
+progress {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 3px 0;
+}
+.arrowRight {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  padding: 1rem;
+  z-index: 100;
+  > svg {
+    width: 40px;
+    fill: $AntiqueWhite;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.404);
+      border-radius: 50px;
+    }
+  }
+}

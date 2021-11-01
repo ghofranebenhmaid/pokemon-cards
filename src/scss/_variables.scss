@@ -1,0 +1,25 @@
+// font
+@font-face {
+  font-family: 'Pokemon';
+  src: url('../assets/fonts/Pokemon\ Solid.ttf');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../assets/fonts/Ubuntu/Ubuntu-Bold.ttf'),
+    url('../assets/fonts/Ubuntu/Ubuntu-Light.ttf'),
+    url('../assets/fonts/Ubuntu/Ubuntu-Medium.ttf');
+}
+
+$FontUbuntu: 'Ubuntu';
+$FontPokemon: 'Pokemon';
+// color
+$lBlue: #315b96;
+$Orange: #ffcb05;
+
+$white: #ffffff;
+$AntiqueWhite: antiquewhite;
+$LightGray: #d3d3d3;
+$black: #323232;
+$blue: #1f2a48;
+$LightBlue: #1f2a48;
+$VeryLightBlue: #d9e9ff;
